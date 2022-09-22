@@ -10,11 +10,11 @@
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg">
     <link rel="icon" href="https://nbriz.github.io/cool-page/cat-icon.png">
 
-    <style> 
+    <style>
       body {
         margin: 0;
       }
-      
+
       main {
         background: pink;
         display: flex;
@@ -23,13 +23,31 @@
         justify-content: center;
       }
 
+      @keyframes walk {
+        to {
+          background-position: -527px 250px;
+        }
+      }
+
+      #link {
+        display: inline-block;
+        background-image: url(link-sheet.png);
+        background-position: 0px 250px;
+        width: 50px;
+        height: 69px;
+        animation-name: walk;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(10);
+      }
+
       h1 {
         text-align: center;
         font-family: monospace;
         font-size: 50px;
         margin: 0px;
       }
-      
+
       h1:before {
         content: "⭐";
         font-size: 18px;
@@ -62,7 +80,7 @@
         color: white;
         text-decoration: none;
       }
-      
+
       a:hover {
         color: black;
       }
@@ -76,6 +94,7 @@
 
       <h1 id="big-red">
         Nick Briz
+        <div id="link"></div>
       </h1>
 
       <p>
