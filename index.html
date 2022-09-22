@@ -1,24 +1,85 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		
+  <head>
+    <meta charset="utf-8">
+
     <title>My Page</title>
     <meta name="description" content="the coolest page">
     <meta name="author" content="Nick Briz">
-    
+
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg">
     <link rel="icon" href="https://github.com/fluidicon.png">
-    
-	</head>
-	<body>
-			
-    <h1>
-      Welcome to my homepage
-    </h1>
-    <p>
-			this is the coolest site in the world!
-    </p>
-    
-	</body>
+
+    <style> 
+      body {
+        margin: 0;
+      }
+      
+      main {
+        background: pink;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: monospace;
+        font-size: 50px;
+        margin: 0px;
+      }
+
+      #cat {
+        width: 50px;
+        display: block;
+        margin: 0px auto;
+      }
+
+      p {
+        max-width: 500px;
+        margin: 30px auto;
+      }
+
+      nav {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: black;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <main>
+      <img src="cat-icon.png" alt="an image of a cat" id="cat">
+
+      <h1 id="big-red">
+        Nick Briz
+      </h1>
+
+      <p>
+        hi, i'm a internet artist / educator / organizer that makes work with (but also about) the technology that defines the era we're living in.
+      </p>
+
+      <nav>
+        <a href="https://instagram.com/nbriz" target="_blank">instagram</a>
+        <a href="https://youtube.com/nickbriz" target="_blank">youtube</a>
+        <a href="https://twitter.com/nbriz" target="_blank">twitter</a>
+        <a href="https://github.com/nbriz" target="_blank">github</a>
+      </nav>
+    </main>
+
+  </body>
 </html>
